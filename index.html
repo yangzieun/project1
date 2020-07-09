@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>주시브로스</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <script>
+        $(function() {
+            $('.bxslider').bxSlider({
+                captions: true,
+                //slideWidth:500,  //수정
+                auto: true,
+                autoControls: false,
+                stopAutoOnclick: true,
+
+            });
+
+            var mySlider = $("#slide_banner").bxSlider({
+                mode: "horizontal", // 가로 수평으로 슬라이드 됩니다.
+                speed: 500, // 이동 속도를 설정합니다.
+                pager: false, // 현재 위치 페이징 표시 여부 설정.
+                moveSlides: 1, // 슬라이드 이동시 갯수 설정.
+                slideWidth: 270, // 슬라이드 마다 너비 설정.
+                minSlides: 3, // 최소 노출 개수를 설정합니다.
+                maxSlides: 3, // 최대 노출 개수를 설정합니다.
+                slideMargin: 70, // 슬라이드간의 간격을 설정합니다.
+                auto: true, // 자동으로 흐를지 설정합니다.
+                autoHover: true, // 마우스 오버시 정시킬지 설정합니다.
+                controls: false // 이전 다음 버튼 노출 여부 설정합니다.
+            });
+            //이전 버튼을 클릭하면 이전 슬라이드로 전환됩니다.
+            $("#prevBtn").on("click", function() {
+                mySlider.goToPrevSlide(); //이전 슬라이드 배너로 이동됩니다.
+                return false; //<a>에 링크를 차단합니다.
+            });
+            //다음 버튼을 클릭하면 다음 슬라이드로 전환됩니다.
+            $("#nextBtn").on("click", function() {
+                mySlider.goToNextSlide(); //다음 슬라이드 배너로 이동됩니다.
+                return false;
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="top_header">
+                <div class="inner">
+                    <ul class="sns">
+                        <li>
+                            <a href="#"><img src="images/face.png" alt="페이스북"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/insta.png" alt="인스타"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/twit.png" alt="트위터"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/kakao.png" alt="카카오"></a>
+                        </li>
+                        <div class="space"></div>
+                    </ul>
+                    <ul class="login">
+                        <li><a href="#">LOGIN</a></li>
+                        <li>|</li>
+                        <li><a href="#">CART(0)</a></li>
+                        <li>|</li>
+                        <li><a href="#">MY PAGE</a></li>
+                        <div class="space"></div>
+                    </ul>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <div class="bottom_header">
+                <div class="inner">
+                    <ul class="menu_left">
+                        <li><a href="sub1.html">JUICYBROS</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="sub1.html">Brand Story</a></li>
+                                    <li><a href="#">Cleanse Guide</a></li>
+                                    <li><a href="#">Program</a></li>
+                                    <li><a href="#">Set</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="sub2.html">SALAD CAFE</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Pick up &amp; Delivery</a></li>
+                                    <li><a href="#">Franchise Info</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="sub1.html">CS</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Notice</a></li>
+                                    <li><a href="#">1:1 CS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="로고이미지"></a>
+                    </div>
+                    <ul class="menu_right">
+                        <li><a href="sub2.html">REVIEW</a></li>
+                        <li><a href="sub1.html">EVENT</a></li>
+                        <li><a href="sub2.html">FAQ</a></li>
+                        <li><a href="#"><img src="images/btn.jpg" alt="메뉴버튼"></a></li>
+                        <div class="space"></div>
+                    </ul>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bxslider">
+            <div id="mainimg">
+                <div class="bninner">
+                    <div class="main_text">
+                        <h6>BIG SIZE EVENT</h6>
+                        <h2>대용량 <span>더블</span> 증정 이벤트</h2>
+                        <p>고르지 마세요~ 둘 다 드립니다.<br>3만원 이상 구매 시 대용량 2병 증정!</p>
+                        <a href="#">
+                            <div class="btn">VIEW</div>
+                        </a>
+                    </div>
+                    <div class="main_bottle">
+                        <img src="images/mainbottle.png" alt="메인상품이미지">
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainimg">
+<div class="bninner">
+                <div class="main_text">
+                    <h6>BIG SIZE EVENT</h6>
+                    <h2>대용량 <span>더블</span> 증정 이벤트</h2>
+                    <p>고르지 마세요~ 둘 다 드립니다.<br>3만원 이상 구매 시 대용량 2병 증정!</p>
+                    <a href="#">
+                        <div class="btn">VIEW</div>
+                    </a>
+                </div>
+                <div class="main_bottle">
+                    <img src="images/mainbottle.png" alt="메인상품이미지">
+                </div>
+</div>
+            </div>
+        </div>
+
+
+        <div id="contents">
+            <div class="best">
+                <div class="inner">
+                    <h3>BEST PROGRAM</h3>
+                    <div class="best_set">
+                        <div class="btnleft">
+                            <a href="#"><img src="images/btnleft.jpg" alt="버튼1왼쪽"></a>
+                        </div>
+                        <div class="program_set">
+                            <div class="program">
+                                <img src="images/best11.jpg" alt="베스트11">
+                            </div>
+                            <div class="program">
+                                <img src="images/best2.jpg" alt="베스트2">
+                            </div>
+                            <div class="program">
+                                <img src="images/best3.jpg" alt="베스트3">
+                            </div>
+
+                        </div>
+                        <div class="btnright">
+                            <a href="#"><img src="images/btnright.jpg" alt="버튼1오른쪽"></a>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="best_info">
+                        <div class="program_text">
+                            <p>지금 완벽한 여행을 계획하고 있다면, 엽록소 풍부한 녹색채소가 담긴 제품으로<br>몸의 균형을 잡아주는데 도움이 되는 바캉스 프로그램을 시작하세요.</p>
+                        </div>
+                        <div class="program_btn">프로그램 보기</div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pickup">
+                <div class="inner">
+                    <h2>PICK UP &amp; DELIVERY</h2>
+                    <div class="pick">
+                        <div class="p_left">
+                            <i>
+                                <img src="images/n1.png" alt="숫자1">
+                            </i>
+                            <p>미리 주문하세요!<br>기다리지 않고 바로 PICK UP 할 수 있습니다.</p>
+                        </div>
+                        <div class="p_right">
+                            <i>
+                                <img src="images/n2.png" alt="숫자2">
+                            </i>
+                            <p>배달앱으로 간편하게 주문하세요.<br><span><img src="images/delicon.png" alt="배달앱"></span></p>
+                            <div class="space"></div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="foodmenu">
+                <div id="banner_wrap">
+                    <div class="inner">
+                        <ul id="slide_banner">
+                            <li><a href="#">
+                                    <div class="scale1"><img src="images/menu1.jpg" alt="사진1" /></div>
+                                </a>
+                                <p>Beef Steak Super Bowl</p>
+                                <h4>비프 스테이크</h4>
+                            </li>
+                            <li><a href="#">
+                                    <div class="scale1"><img src="images/menu2.jpg" alt="사진2" /></div>
+                                </a>
+                                <p>Shrimp Rose Pasta</p>
+                                <h4>쉬림프 로제 파스타</h4>
+                            </li>
+                            <li><a href="#">
+                                    <div class="scale1"><img src="images/menu3.jpg" alt="사진3" /></div>
+                                </a>
+                                <p>Chicken Grain</p>
+                                <h4>치킨 그레인</h4>
+                            </li>
+                        </ul>
+                        <div>
+                            <p><a href="#" id="prevBtn"><img src="images/btn2left.png" alt="이전버튼" /></a></p>
+                            <p><a href="#" id="nextBtn"><img src="images/btn2right.png" alt="다음버튼" /></a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--
+                <div class="inner">
+                   
+                    <div class="btn2_left">
+                        <img src="images/btn2left.png" alt="버튼2왼쪽">
+                    </div>
+                    <div class="menu_set">
+                        <div class="f_menu">
+                            <div><img src="images/menu1.jpg" alt="메뉴1"></div>
+                            <p>Beef Steak Super Bowl</p>
+                            <h4>비프 스테이크</h4>
+                        </div>
+                        <div class="f_menu">
+                            <div><img src="images/menu2.jpg" alt="메뉴2"></div>
+                            <p>Shrimp Rose Pasta</p>
+                            <h4>쉬림프 로제 파스타</h4>
+                        </div>
+                        <div class="f_menu">
+                            <div><img src="images/menu3.jpg" alt="메뉴3"></div>
+                            <p>Chicken Grain</p>
+                            <h4>치킨 그레인</h4>
+                        </div>
+                    </div>
+                    <div class="btn2_right">
+                        <img src="images/btn2right.png" alt="버튼2오른쪽">
+                    </div>
+                    <div class="space"></div>
+                    -->
+            </div>
+        </div>
+        <div class="order">
+            <div class="inner">
+                <h2>블루주스 배송 안내</h2>
+                <p>과일, 야채의 신선함과 영양분을 유지하고 첨가물을 넣지 않아 유통기한이 다른 상품에 비해 짧습니다.<br>보다 신선하고 건강한 맛으로 매일 고객님과 만나기 위해 최선을 다하겠습니다.</p>
+                <ul class="order_set">
+                    <li>
+                        <p>평일<br>오후 1시<br>주문마감</p>
+                    </li>
+                    <li>
+                        <img src="images/next.jpg" alt="화살표">
+                    </li>
+                    <li>
+                        <p>당일착즙<br>당일포장</p>
+                    </li>
+                    <li>
+                        <img src="images/next.jpg" alt="화살표">
+                    </li>
+                    <li>
+                        <p>배민프레쉬<br>익일배송</p>
+                    </li>
+                    <div class="space"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="chain">
+            <div class="inner">
+                <h2>주시브로스 창업문의</h2>
+                <p>차별화된 기술과 운영 노하우를 공유합니다.<br>트렌드를 앞서나가는 주시브로스와 지금 창업을 시작하세요.</p>
+                <div class="chain_btn"><a href="#">창업 상담하기</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="top_footer">
+            <div class="inner">
+                <ul class="top_left">
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li>|</li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li>|</li>
+                    <li><a href="#">상품·제휴 문의</a></li>
+                    <div class="space"></div>
+                </ul>
+                <ul class="top_right">
+                    <li><a href="#">HOME</a></li>
+                    <li>|</li>
+                    <li><a href="#">GO TO TOP</a></li>
+                    <div class="space"></div>
+                </ul>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="inner">
+                <div class="bottom_left">
+                    <div class="f_logo">
+                        <img src="images/flogo.png" alt="푸터로고">
+                    </div>
+                    <ul class="info">
+                        <li>COMPANY<span>주식회사 힘난다</span></li>
+                        <li>OWNER<span>허요셉</span></li>
+                        <li>ADDRESS<span>서울특별시 서초구 서초대로 398 (플래티넘타워) 패스트파이브 강남 3호점</span></li>
+                        <li>사업자등록번호<span>743-81-00222</span></li>
+                        <li>통신판매업 신고번호<span>제 2016-성남분당-0002호</span></li>
+                        <li>Copyright by 주식회사 힘난다. All rights reserved.</li>
+                    </ul>
+                </div>
+                <div class="bottom_right">
+                    <P>CS CENTER</P>
+                    <h4>070-7778-6768</h4>
+                    <div class="space"></div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
