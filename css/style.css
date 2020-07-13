@@ -8,7 +8,7 @@ src: url("fonts/NotoSansCJKkr-DemiLight.otf") format("opentype");}
 src: url("fonts/NotoSansCJKkr-Medium.otf") format("opentype");}
 
 *{padding: 0; margin: 0}
-body{font-family: NotoSansCJKkr-Regular; min-width: 1200px}
+body{font-family: NotoSansCJKkr-Regular; min-width: 1500px}
 .space{clear: both}
 .inner{width: 1290px; margin: 0 auto}
 ul{list-style: none}
